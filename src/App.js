@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 function App() {
 
   useEffect(() => {
-    // Por enquanto, vamos manter apenas um dos erros de teste.
+    // erro pra testar se o datadog ta funfando.
     setTimeout(() => {
       throw new Error("Erro de teste - deve aparecer nos logs");
     }, 2000);
