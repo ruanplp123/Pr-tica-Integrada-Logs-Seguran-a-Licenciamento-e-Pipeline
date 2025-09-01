@@ -5,13 +5,10 @@ import { useEffect } from 'react';
 function App() {
 
   useEffect(() => {
-    // Erro de teste de renderização
+    // Por enquanto, vamos manter apenas um dos erros de teste.
     setTimeout(() => {
       throw new Error("Erro de teste - deve aparecer nos logs");
     }, 2000);
-
-    // Promise rejeitada não tratada
-    Promise.reject(new Error("Rejeição não tratada de teste"));
   }, []);
 
   return (

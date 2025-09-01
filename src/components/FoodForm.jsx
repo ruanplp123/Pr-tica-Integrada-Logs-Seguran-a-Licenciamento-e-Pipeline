@@ -2,8 +2,8 @@ import React from "react"
 
 // Só pra gerar um teste la no site
 const handleClick = () => {
-  // É pro datadog capturar esse erro
-  throw new Error("Erro de teste para o Datadog");git add .
+  // É pro datadog pegar esse erro
+  throw new Error("Erro de teste para o Datadog");
 };
 
 const FoodForm = ({ total, saveFood }) => (

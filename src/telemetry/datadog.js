@@ -21,7 +21,7 @@ export function initDatadog() {
     plugins: [reactPlugin()],
   });
 
-  // Configuração para Logs (que você já tinha)
+  // Configuração para Logs
   datadogLogs.init({
     clientToken: process.env.REACT_APP_DD_CLIENT_TOKEN,
     site: process.env.REACT_APP_DD_SITE || 'datadoghq.com',
