@@ -27,10 +27,13 @@ jobs:
       - name: Run Tests
         run: npm test
 
+      # 5. Análise de Segurança SAST (Semgrep)
+      # Usamos uma action oficial para garantir que a ferramenta seja instalada corretamente.
       - name: SAST Analysis (Semgrep)
-        run: |
-          npm install -g semgrep
-          semgrep --config auto .
+        uses: returntocorp/semgrep-action@v1
+        with:
+          config: auto
 
+      # 6. Auditoria de Licenças
       - name: License Audit
         run: npx license-checker --summary
