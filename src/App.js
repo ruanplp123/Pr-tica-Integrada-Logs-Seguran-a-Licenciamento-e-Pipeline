@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="dietForm">
       <DietTable/>
-      <h1>Testando logs 🚀</h1> {/* Só para ver visualmente */}
+      <h1>Testando logs </h1> {/* Só para ver visualmente */}
     </div>
   );
 }
